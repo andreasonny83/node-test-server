@@ -1,17 +1,18 @@
 {
   "name": "nodeserver",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.0",
+  "main": "src/server/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server/app.js"
   },
-  "author": "Andrea Sonny <andreasonny83@gmail.com> (https://github.com/andreasonny83)",
-  "license": "ISC",
-  "devDependencies": {
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
     "body-parser": "^1.15.1",
     "express": "^4.13.4",
-    "http": "0.0.0",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "pkginfo": "^0.4.0",
+    "serve-favicon": "^2.3.0"
   }
 }
