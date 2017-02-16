@@ -4,7 +4,8 @@
   "main": "src/server/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/server/app.js"
+    "start": "nodemon src/server/app.js",
+    "heroku:start": "node src/server/app.js"
   },
   "private": true,
   "license": "MIT",
