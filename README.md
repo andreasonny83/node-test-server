@@ -4,23 +4,31 @@ Server running on [Heroku](https://sonny-test-server.herokuapp.com/)
 
 ## Requirements
 
-1.  Node.js v4.2.x
-2.  NPM v3.10.x
+1.  NodeJS >=5
+2.  NPM >=3
 
 ## Setup
 
 clone this repository on your local machine.
 Then install all the npm dependencies with:
 
-```sh
-npm install
+```bash
+$ npm install
+// Or using Yarn with:
+$ yarn install
 ```
 
 ## How to Run Both Apps
 
 1.  Open your terminal and `cd` to the root folder for this repository
 
-2.  Run `npm start` to spin up the `app`
+2.  Run
+
+   ```bash
+   $ npm start
+   ```
+
+   to spin up the `app`
 
 3.  You should see a message telling you on which port is the server listening
 (by default this is 8009)
@@ -31,4 +39,4 @@ npm install
 
 ## License
 
-MIT © [Andrea Sonny](https://andreasonny.mit-license.org/@2016)
+MIT © [Andrea Sonny](https://andreasonny.mit-license.org/2016-2017)

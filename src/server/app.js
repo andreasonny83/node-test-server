@@ -55,7 +55,8 @@ switch (environment) {
 };
 
 app.listen(port, function() {
-  console.log('Express server listening on port ' + port);
+  console.log(`Express server is listening on http://localhost:${port}`);
+  console.log(`The API server is listening on http://localhost:${port}/api`);
     console.log([
     'env = ' + app.get('env'),
     '__dirname = ' + __dirname,

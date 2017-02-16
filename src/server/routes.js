@@ -5,8 +5,20 @@ var pkginfo = require('pkginfo')(module);
 var appName = module.exports.name;
 var appVersion = module.exports.version;
 
+/**
+ * CORS support
+ * Customize that according to your client app requirements
+ */
+router.use(function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
+
 router.get('/', home);
 router.get('/status', status);
+
+router.get('/directory/healthCheck', healthCheck);
 
 router.get('/*', four0four.notFoundMiddleware);
 
@@ -25,4 +37,8 @@ function status(req, res) {
 
 function home(req, res) {
   res.status(200).send('Hello there!');
+}
+
+function healthCheck(req, res) {
+  res.status(204).send();
 }
